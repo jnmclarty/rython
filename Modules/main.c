@@ -123,10 +123,17 @@ usage(int exitcode, wchar_t* program)
 
 static void RunStartupFile(PyCompilerFlags *cf)
 {
+    // char *env = "print('Jeff wins')";
+
     char *startup = Py_GETENV("PYTHONSTARTUP");
+
+    (void) PyRun_SimpleStringFlags("print('\\n  sys.path:')", 0);
+    (void) PyRun_SimpleStringFlags("import sys;print('\\n'.join(sys.path))", 0);
+
     if (startup != NULL && startup[0] != '\0') {
         FILE *fp = _Py_fopen(startup, "r");
         if (fp != NULL) {
+            (void) PyRun_SimpleStringFlags("print('\\nRunning PYTHONSTARTUP now')", 0);
             (void) PyRun_SimpleFileExFlags(fp, startup, 0, cf);
             PyErr_Clear();
             fclose(fp);
