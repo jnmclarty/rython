@@ -23,4 +23,4 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 The purpose of this fork is just to explore an idea.
 
-Its idea which I'm 100% sure the current python community would not go for.
+An idea which I'm 100% sure the current python community would not tolerate due to the likely backwards-compatibility breaks.
