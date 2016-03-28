@@ -1,9 +1,11 @@
-This is Rython version 0.0.1 (aka a fork of Python 3.5.1)
-========================================================
+This is Rython version 0.0.1
+============================
 
-This fork, only does one thing differently is always print out the
-contents of sys.path at startup.  This is hardcoded to run before
-PYTHONSTARTUP.
+This fork (of the friendliest kind, of Python 3.5.1) 
+only does one thing differently than Python. 
+It always prints out the contents of sys.path at startup.
+
+This is hardcoded to run before any PYTHONSTARTUP script.
 
 ```
 Rython 0.0.1 (default, Mar 25 2016, 11:13:00) 
@@ -19,3 +21,6 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```
 
+The purpose of this fork is just to explore an idea.
+
+Its idea which I'm 100% sure the current python community would not go for.
